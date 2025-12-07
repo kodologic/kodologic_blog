@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0A0F1C;
+  --foreground: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-2 bg-primary text-dark font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300;
+  }
+  .card-gradient {
+    @apply bg-gradient-to-br from-surface to-dark border border-gray-800 hover:border-primary/50 transition-all duration-300;
+  }
+}
